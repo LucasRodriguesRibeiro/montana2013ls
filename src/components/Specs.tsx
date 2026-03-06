@@ -4,7 +4,7 @@ import { Calendar, Car, Settings } from "lucide-react";
 const specs = [
   { label: "Modelo", value: "Chevrolet Montana LS", icon: Car },
   { label: "Ano", value: "2013", icon: Calendar },
-  { label: "Adaptação", value: "Funerária Luxo (2 Urnas)", icon: Settings },
+  { label: "Adaptação", value: "Atena Veículos (2 Urnas)", icon: Settings },
 ];
 
 export function Specs() {

@@ -39,7 +39,7 @@ export function Hero() {
               {[
                 "Ano 2013",
                 "Baixa KM",
-                "Procedência Garantida",
+                "Documentação em Dias",
                 "Pronta Entrega"
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2 text-[12px] sm:text-sm font-bold text-slate-700">

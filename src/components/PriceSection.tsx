@@ -20,7 +20,7 @@ export function PriceSection() {
 
               <ul className="mb-10 space-y-4 text-left inline-block md:block mx-auto">
                 {[
-                  "Documentação 2024 Paga",
+                  "Documentação em Dias",
                   "Transferência Imediata",
                   "Laudo Cautelar Aprovado",
                   "Garantia de Motor e Câmbio"

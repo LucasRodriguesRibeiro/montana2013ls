@@ -20,7 +20,7 @@ const features = [
   {
     icon: Award,
     title: "Adaptação Profissional",
-    description: "Não é apenas uma caçamba, é uma estrutura preparada para o transporte digno e seguro de urnas.",
+    description: "Adaptada pela Atena Veículos, uma das empresas de capotas mais conceituadas do setor funerário. Estrutura de alto padrão para o transporte digno e seguro de urnas.",
   },
   {
     icon: CheckCircle2,
