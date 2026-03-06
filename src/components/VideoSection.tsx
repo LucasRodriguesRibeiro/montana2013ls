@@ -39,7 +39,7 @@ export function VideoSection() {
           >
             <div className="relative aspect-video overflow-hidden rounded-[2rem] sm:rounded-[3rem] bg-slate-900 shadow-[0_20px_60px_-15px_rgba(37,99,235,0.1)] sm:shadow-[0_40px_100px_-15px_rgba(37,99,235,0.15)] border-4 sm:border-8 border-white">
               <iframe
-                src={`https://player.vimeo.com/video/1171043621?h=74686e00cd&color=2563eb&title=0&byline=0&portrait=0&dnt=1${isPlaying ? '&autoplay=1' : ''}`}
+                src={`https://player.vimeo.com/video/1171098596?color=2563eb&title=0&byline=0&portrait=0&dnt=1${isPlaying ? '&autoplay=1' : ''}`}
                 className="absolute inset-0 h-full w-full"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
