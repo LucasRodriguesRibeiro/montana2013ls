@@ -1,7 +1,10 @@
 import { motion } from "motion/react";
-import { Activity, Gauge, Zap } from "lucide-react";
+import { Activity, Gauge, Zap, Play } from "lucide-react";
+import { useState } from "react";
 
 export function EngineSection() {
+    const [isPlaying, setIsPlaying] = useState(false);
+
     return (
         <section className="relative bg-slate-950 py-24 text-white overflow-hidden">
             {/* Abstract Design Elements */}
@@ -53,17 +56,34 @@ export function EngineSection() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="relative"
+                        className="relative group"
                     >
                         <div className="relative z-10 aspect-video lg:aspect-square overflow-hidden rounded-[3rem] bg-slate-900 border-4 border-white/10 shadow-2xl flex items-center justify-center">
-                            <video
-                                src="/videos/motor.MOV"
-                                controls
-                                className="h-full w-full object-cover"
-                                poster="/imagens/WhatsApp Image 2026-03-03 at 11.46.30.jpeg"
-                            >
-                                Seu navegador não suporta a tag de vídeo.
-                            </video>
+                            {isPlaying ? (
+                                <iframe
+                                    src="https://player.vimeo.com/video/1171044324?h=120e2e9c12&color=2563eb&title=0&byline=0&portrait=0&dnt=1&autoplay=1"
+                                    className="absolute inset-0 h-full w-full"
+                                    allow="autoplay; fullscreen; picture-in-picture"
+                                    allowFullScreen
+                                    title="Motor Chevrolet Montana"
+                                ></iframe>
+                            ) : (
+                                <div
+                                    className="absolute inset-0 z-20 cursor-pointer overflow-hidden"
+                                    onClick={() => setIsPlaying(true)}
+                                >
+                                    <img
+                                        src="/imagens/WhatsApp Image 2026-03-03 at 11.46.30.jpeg"
+                                        alt="Capa do Motor"
+                                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    />
+                                    <div className="absolute inset-0 bg-slate-950/40 backdrop-blur-[1px] transition-all duration-500 group-hover:bg-slate-950/60 flex items-center justify-center">
+                                        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-blue-600 text-white shadow-2xl transition-all duration-300 group-hover:scale-110 group-active:scale-95 border-4 border-white/10">
+                                            <Play className="h-8 w-8 fill-current ml-1" />
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
                         </div>
 
                         {/* Tech Decoration */}

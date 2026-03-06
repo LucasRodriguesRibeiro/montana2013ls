@@ -48,14 +48,7 @@ export function Hero() {
               ))}
             </div>
 
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="#details"
-                className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-widest transition-all shadow-lg shadow-blue-600/20 active:scale-95"
-              >
-                Ver Detalhes <ArrowRight className="h-4 w-4" />
-              </a>
-            </div>
+
           </motion.div>
 
           {/* Car Image with Premium Frame */}
