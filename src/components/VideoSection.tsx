@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Play } from "lucide-react";
+import { Play, MessageCircle } from "lucide-react";
 import { useState } from "react";
 
 export function VideoSection() {
@@ -78,6 +78,18 @@ export function VideoSection() {
             transition={{ delay: 0.2 }}
             className="mx-auto"
           >
+            <div className="flex flex-col items-center justify-center gap-4 sm:gap-6 sm:flex-row mb-12 sm:mb-16">
+              <a
+                href="https://wa.me/5574999564177?text=Olá,%20vim%20pelo%20anúncio%20e%20tenho%20interesse%20no%20Montana."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex w-full max-w-sm sm:max-w-none sm:w-auto items-center justify-center gap-3 sm:gap-4 rounded-xl sm:rounded-3xl bg-[#25D366] hover:bg-[#20ba59] px-6 py-5 sm:px-12 sm:py-7 text-[12px] sm:text-sm font-black uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white shadow-xl shadow-green-600/30 transition-all active:scale-95"
+              >
+                <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6" />
+                Entrar em Contato
+              </a>
+            </div>
+
             <div className="inline-block border-y border-slate-900/10 sm:border-y-2 sm:border-slate-900/5 py-4 sm:py-8 px-6 sm:px-12 mb-8 sm:mb-10">
               <p className="text-lg sm:text-2xl md:text-4xl text-slate-900 font-black uppercase tracking-[0.1em] sm:tracking-[0.2em]">
                 Montana 2013 | <span className="text-blue-600">Compre e Opere Hoje</span>
